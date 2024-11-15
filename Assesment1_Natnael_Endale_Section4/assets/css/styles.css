@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: ivory;
+}
+h1{
+    background-color: transparent;
+}
+p{
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+header{
+    height: 75px;
+    background-color: #d9eed9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h2{
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: #4CAF50;
+    text-decoration: none;
+    margin-right: 35px;
+    display: inline;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+nav ul li a:hover{
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.2);
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+section.product-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    gap: 60px;
+}
+article.product{
+    height: 600px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    box-shadow: 3px 4px 22px grey;
+    padding: 20px 10px;
+    background-color: white;
+}
+article.product img{
+    object-fit:cover;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 10px;
+}
+article.product p{
+    text-align: center;
+    background-color: white;
+}
+article.product h2{
+    text-align: center;
+    background-color: white;
+}
+.product .price{
+    color: rgb(0, 208, 0);
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 15px;
+    background-color: white;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #124314;
+    margin-top: 25px;
+    color: white;
+}
+footer p{
+    background-color: transparent;
+}
+img:hover{
+    box-shadow: 10px 4px 40px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    section.product-list {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+
+    }
+    .nav {
+        flex-direction: column; 
+    }
+    img {
+        width: 100%; 
+    }
+}
