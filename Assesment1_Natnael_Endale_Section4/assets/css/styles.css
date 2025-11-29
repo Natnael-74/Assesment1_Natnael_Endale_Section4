@@ -12,7 +12,7 @@ p{
     margin-bottom: 15px;
 }
 header{
-    height: 75px;
+    height: 70px;
     background-color: #d9eed9;
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@ header{
 }
 header h2{
     font-weight: bolder;
-    font-size: 1.8em;
+    font-size: 1.85em;
 }
 nav{
     display: flex;
@@ -108,11 +108,11 @@ footer p{
 img:hover{
     box-shadow: 10px 4px 40px rgba(0, 0, 0, 0.2);
 }
+
 @media (max-width: 768px) {
     section.product-list {
         grid-template-columns: 1fr; 
         gap: 20px;
-
     }
     .nav {
         flex-direction: column; 
@@ -121,3 +121,4 @@ img:hover{
         width: 100%; 
     }
 }
+
